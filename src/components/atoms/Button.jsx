@@ -1,11 +1,11 @@
 import React from "react";
 
-const Button = props => {
+const Button = (props) => {
+  return (
+    <button onClick={props.onclick} className={props.buttonClass}>
+      {props.title}
+    </button>
+  );
+};
 
-    const buttonClass = "btn btn-" + props.color
-    return (
-        <button className={buttonClass}>{props.title}</button>
-    )
-}
-
-export default Button
+export default Button;
