@@ -1,23 +1,16 @@
-import { BrowserRouter } from "react-router-dom"
-import '../index.css'
-function App() {
+import { BrowserRouter, Route, Routes  } from "react-router-dom"
+import Home from "./pages/Home";
 
+function App() {
   return (
     <>
-    <BrowserRouter>
-      <h1>Hello world</h1>
-      <p>Welcome to my React app!</p>
-      <button className="btn btn-neutral">Neutral</button>
-      <button className="btn btn-primary">Primary</button>
-      <button className="btn btn-secondary">Secondary</button>
-      <button className="btn btn-accent">Accent</button>
-      <button className="btn btn-info">Info</button>
-      <button className="btn btn-success">Success</button>
-      <button className="btn btn-warning">Warning</button>
-      <button className="btn btn-error">Error</button>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={< Home />} />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
