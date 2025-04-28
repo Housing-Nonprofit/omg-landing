@@ -2,37 +2,99 @@
 @plugin "daisyui";
 
 @plugin "daisyui/theme" {
-    name: "lofi";
-    default: true;
-    prefersdark: true;
-    color-scheme: "light";
-    --color-base-100: oklch(100% 0 0);
-    --color-base-200: oklch(97% 0 0);
-    --color-base-300: oklch(94% 0 0);
-    --color-base-content: oklch(0% 0 0);
-    --color-primary: oklch(15.906% 0 0);
-    --color-primary-content: oklch(100% 0 0);
-    --color-secondary: oklch(44% 0.043 257.281);
-    --color-secondary-content: oklch(100% 0 0);
-    --color-accent: oklch(55% 0.046 257.417);
-    --color-accent-content: oklch(100% 0 0);
-    --color-neutral: oklch(87% 0 0);
-    --color-neutral-content: oklch(12% 0.042 264.695);
-    --color-info: oklch(79.54% 0.103 205.9);
-    --color-info-content: oklch(15.908% 0.02 205.9);
-    --color-success: oklch(72% 0.219 149.579);
-    --color-success-content: oklch(18.026% 0.03 164.14);
-    --color-warning: oklch(88.37% 0.135 79.94);
-    --color-warning-content: oklch(17.674% 0.027 79.94);
-    --color-error: oklch(78.66% 0.15 28.47);
-    --color-error-content: oklch(15.732% 0.03 28.47);
-    --radius-selector: 2rem;
-    --radius-field: 0.25rem;
-    --radius-box: 0.5rem;
-    --size-selector: 0.25rem;
-    --size-field: 0.25rem;
-    --border: 1px;
-    --depth: 0;
-    --noise: 0;
-  }
-  
+  name: "lofi";
+  default: true;
+  prefersdark: true;
+  color-scheme: "light";
+  --color-base-100: oklch(100% 0 0);
+  --color-base-200: oklch(97% 0 0);
+  --color-base-300: oklch(94% 0 0);
+  --color-base-content: oklch(0% 0 0);
+  --color-primary: oklch(15.906% 0 0);
+  --color-primary-content: oklch(100% 0 0);
+  --color-secondary: oklch(44% 0.043 257.281);
+  --color-secondary-content: oklch(100% 0 0);
+  --color-accent: oklch(55% 0.046 257.417);
+  --color-accent-content: oklch(100% 0 0);
+  --color-neutral: oklch(87% 0 0);
+  --color-neutral-content: oklch(12% 0.042 264.695);
+  --color-info: oklch(79.54% 0.103 205.9);
+  --color-info-content: oklch(15.908% 0.02 205.9);
+  --color-success: oklch(72% 0.219 149.579);
+  --color-success-content: oklch(18.026% 0.03 164.14);
+  --color-warning: oklch(88.37% 0.135 79.94);
+  --color-warning-content: oklch(17.674% 0.027 79.94);
+  --color-error: oklch(78.66% 0.15 28.47);
+  --color-error-content: oklch(15.732% 0.03 28.47);
+  --radius-selector: 2rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+
+body,
+html,
+#root,
+.app {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #f8f8f8;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nav button:hover {
+  background: #0056b3;
+}
+
+.services {
+  padding: 2rem;
+  background: #fff;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.service-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.service {
+  max-width: 200px;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f8f8f8;
+}
