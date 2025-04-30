@@ -30,15 +30,12 @@ const ModeSwitch = () => {
   );
 };
 
-const LangSwitch = ({ onChangeLanguage, lang }) => {
-
-  
+const LangSwitch = ({ onChangeLanguage, language }) => {
 
   return (
     <label className="swap">
-      <input type="checkbox" />
       <a onClick={onChangeLanguage} className="swap-off text-10">
-        {lang}
+        {language}
       </a>
     </label>
   );

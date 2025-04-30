@@ -9,16 +9,16 @@ import SpanishBase from "../languages/Spanish"
 function HomePage () {
 
   const [language, setLanguage] = useState(EnglishBase)
-  const [currentLang, setCurrentLang] = useState("EN")
+  const [currentLang, setCurrentLang] = useState("ES")
 
   function updateLanguage() {
-    if (currentLang === "EN") {
+    if (currentLang === "ES") {
       setLanguage(SpanishBase)
-      setCurrentLang("ES")
+      setCurrentLang("EN")
     }
     else {
       setLanguage(EnglishBase)
-      setCurrentLang("EN")
+      setCurrentLang("ES")
     }
   }
 

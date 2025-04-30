@@ -25,7 +25,7 @@ const Header = ({ menu, onChangeLanguage, lang }) => {
               );
             })}
           </ul>
-          < LangSwitch onChangeLanguage={onChangeLanguage} lang={lang} />
+          < LangSwitch onChangeLanguage={onChangeLanguage} language={lang} />
         </div>
       </div>
     </>

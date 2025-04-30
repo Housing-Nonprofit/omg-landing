@@ -23,7 +23,7 @@ const Hero = {
 }
 
 const SpanishBase = {
-    opposite: "en",
+    opposite: "EN",
     menu: TopMenu,
     hero: Hero
 }
