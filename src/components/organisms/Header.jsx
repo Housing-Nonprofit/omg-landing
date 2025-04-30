@@ -1,5 +1,7 @@
 import React from "react";
 import { LangSwitch } from "../atoms/ModeSwitch";
+import logo from "./../../assets/webwave_logo_black.png";
+
 
 const Header = ({ menu, lang }) => {
   return (
@@ -8,7 +10,7 @@ const Header = ({ menu, lang }) => {
         <div className="navbar-start">
           <img
             className="size-10"
-            src="../src/assets/webwave_logo_black.png"
+            src={logo}
             alt=""
           />
           <a className="btn btn-ghost text-xl">Webwave Solutions</a>

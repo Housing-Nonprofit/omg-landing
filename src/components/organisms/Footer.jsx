@@ -1,4 +1,6 @@
 import React from "react";
+import logo from "./../../assets/webwave_logo_white.png";
+
 
 const Footer = () => {
   return (
@@ -7,7 +9,7 @@ const Footer = () => {
     <aside>
     <img
             className="size-10"
-            src="../src/assets/webwave_logo_white.png"
+            src={logo}
             alt=""
           />
       <p className="font-bold">
