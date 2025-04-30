@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigate } from "react-router-dom";
+import { redirect } from "react-router";
 
 const ModeSwitch = () => {
   return (
@@ -30,13 +30,15 @@ const ModeSwitch = () => {
   );
 };
 
-const LangSwitch = ({ lang }) => {
+const LangSwitch = ({ onChangeLanguage, lang }) => {
+
+  
 
   return (
     <label className="swap">
       <input type="checkbox" />
-      <a href={"/" + lang} className="swap-off text-10">
-        {lang.toUpperCase()}
+      <a onClick={onChangeLanguage} className="swap-off text-10">
+        {lang}
       </a>
     </label>
   );

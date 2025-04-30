@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = ({ content }) => {
   return (
-    <div className="hero bg-base-200 h-150">
+    <div className="hero bg-base-200 h-200">
       <div className="hero-content text-center">
         <div className="max-w-5xl">
           <h1 className="lg:text-6xl/18 portrait:text-5xl/14 font-bold line">{content.title}</h1>

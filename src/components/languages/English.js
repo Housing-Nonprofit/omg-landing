@@ -28,6 +28,4 @@ const EnglishBase = {
     hero: Hero
 }
 
-export {
-    EnglishBase
-}
+export default EnglishBase

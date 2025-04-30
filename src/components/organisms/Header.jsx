@@ -3,7 +3,7 @@ import { LangSwitch } from "../atoms/ModeSwitch";
 import logo from "./../../assets/webwave_logo_black.png";
 
 
-const Header = ({ menu, lang }) => {
+const Header = ({ menu, onChangeLanguage, lang }) => {
   return (
     <>
       <div className="navbar bg-base-100 shadow-sm">
@@ -25,7 +25,7 @@ const Header = ({ menu, lang }) => {
               );
             })}
           </ul>
-          < LangSwitch lang={lang} />
+          < LangSwitch onChangeLanguage={onChangeLanguage} lang={lang} />
         </div>
       </div>
     </>
