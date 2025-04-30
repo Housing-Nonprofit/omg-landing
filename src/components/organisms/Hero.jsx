@@ -1,15 +1,15 @@
 import React from "react";
 
-const Hero = () => {
+const Hero = ({ content }) => {
   return (
-    <div className="hero bg-base-200 h-200">
+    <div className="hero bg-base-200 h-150">
       <div className="hero-content text-center">
         <div className="max-w-5xl">
-          <h1 className="text-6xl font-bold">Transform Your Business with Custom Software</h1>
-          <p className="py-6 max-w-xl text-center m-auto">
-            We provide custom high-quality solutions tailored to the needs of your business. 
+          <h1 className="lg:text-6xl/18 portrait:text-5xl/14 font-bold line">{content.title}</h1>
+          <p className="py-8 max-w-xl2 text-center m-auto text-lg/8">
+           {content.subtitle}
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <button className="btn btn-primary btn-xl">{content.cta}</button>
         </div>
       </div>
     </div>
