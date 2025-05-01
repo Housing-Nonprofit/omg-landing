@@ -34,7 +34,7 @@ const LangSwitch = ({ onChangeLanguage, language }) => {
 
   return (
     <label className="swap">
-      <a onClick={onChangeLanguage} className="swap-off text-10">
+      <a onClick={onChangeLanguage} className="swap-off text-10 btn btn-outline">
         {language}
       </a>
     </label>

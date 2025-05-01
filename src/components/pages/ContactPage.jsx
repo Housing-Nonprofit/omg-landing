@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "../organisms/Header"
 import Footer from '../organisms/Footer';
 import Hero from "../organisms/Hero";
-import HomePageServicesList from "../organisms/HomePageServices"
+import Services from "../organisms/Services"
 import EnglishBase from "../languages/English"
 import SpanishBase from "../languages/Spanish"
 
@@ -27,7 +27,7 @@ function HomePage () {
     <>
     <Header menu={language.menu} onChangeLanguage={updateLanguage} lang={currentLang} />
     <Hero content={language.hero} />
-    <HomePageServicesList services={language.services} />
+    <Services />
     <Footer />
     </>
   );

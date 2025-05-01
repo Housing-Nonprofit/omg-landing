@@ -1,4 +1,10 @@
 import React from "react";
+import webdev from "./../../assets/webdev.png";
+import software from "./../../assets/software.png";
+import database from "./../../assets/database.png";
+import cloud from "./../../assets/cloud.png";
+import cyber from "./../../assets/cyber.png";
+import ai from "./../../assets/ai.png";
 
 const TopMenu = [
     {
@@ -22,10 +28,48 @@ const Hero = {
     link: "/contact",
 }
 
+const Services = [
+    [
+        {
+            title:"Website Development",
+            desc:"",
+            img:webdev,
+        },
+        {
+            title:"Web Applications",
+            desc:"",
+            img:software,
+        },
+        {
+            title:"Database Management",
+            desc:"",
+            img:database,
+        }
+    ],
+    [
+        {
+            title:"Cloud Management",
+            desc:"",
+            img:cloud,
+        },
+        {
+            title:"AI Integrations",
+            desc:"",
+            img:ai,
+        },
+        {
+            title:"CyberSecurity",
+            desc:"",
+            img:cyber,
+        },
+    ]
+]
+
 const EnglishBase = {
     opposite: "ES",
     menu: TopMenu,
-    hero: Hero
+    hero: Hero,
+    services: Services
 }
 
 export default EnglishBase

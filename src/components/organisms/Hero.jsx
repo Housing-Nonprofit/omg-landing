@@ -9,7 +9,7 @@ const Hero = ({ content }) => {
           <p className="py-8 max-w-xl2 text-center m-auto text-lg/8">
            {content.subtitle}
           </p>
-          <button className="btn btn-primary btn-xl">{content.cta}</button>
+          <button className="btn btn-primary btn-xl transition delay-100 ease-in-out duration-100 hover:scale-110 hover:btn-accent">{content.cta}</button>
         </div>
       </div>
     </div>
