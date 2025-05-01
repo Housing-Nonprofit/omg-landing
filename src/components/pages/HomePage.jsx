@@ -6,28 +6,13 @@ import HomePageServicesList from "../organisms/HomePageServices"
 import EnglishBase from "../languages/English"
 import SpanishBase from "../languages/Spanish"
 
-function HomePage () {
-
-  const [language, setLanguage] = useState(EnglishBase)
-  const [currentLang, setCurrentLang] = useState("ES")
-
-  function updateLanguage() {
-    if (currentLang === "ES") {
-      setLanguage(SpanishBase)
-      setCurrentLang("EN")
-    }
-    else {
-      setLanguage(EnglishBase)
-      setCurrentLang("ES")
-    }
-  }
-
+function HomePage ({ updateLanguage, lang }) {
 
   return (
     <>
-    <Header menu={language.menu} onChangeLanguage={updateLanguage} lang={currentLang} />
-    <Hero content={language.hero} />
-    <HomePageServicesList services={language.services} />
+    <Header onChangeLanguage={updateLanguage} lang={lang} />
+    <Hero lang={lang} />
+    <HomePageServicesList lang={lang} />
     <Footer />
     </>
   );

@@ -1,9 +1,13 @@
 import React from "react";
 import { LangSwitch } from "../atoms/ModeSwitch";
 import logo from "./../../assets/webwave_logo_black.png";
+import getLanguage from "../functions/Languajes";
 
 
-const Header = ({ menu, onChangeLanguage, lang }) => {
+const Header = ({ onChangeLanguage, lang }) => {
+  const language = getLanguage(lang)
+  const menu = language.menu
+
   return (
     <>
       <div className="navbar bg-base-100 shadow-sm">
@@ -13,7 +17,7 @@ const Header = ({ menu, onChangeLanguage, lang }) => {
             src={logo}
             alt=""
           />
-          <a className="btn btn-ghost text-xl">Webwave Solutions</a>
+          <a className="btn btn-ghost text-xl" href="/">Webwave Solutions</a>
         </div>
         <div className="navbar-end">
           <ul className="menu menu-vertical lg:menu-horizontal">
@@ -25,7 +29,7 @@ const Header = ({ menu, onChangeLanguage, lang }) => {
               );
             })}
           </ul>
-          < LangSwitch onChangeLanguage={onChangeLanguage} language={lang} />
+          < LangSwitch onChangeLanguage={onChangeLanguage} language={language.opposite} />
         </div>
       </div>
     </>

@@ -1,9 +1,10 @@
 import React from "react";
 import Button from "../atoms/Button";
+import getLanguage from "../functions/Languajes";
 
 const HomePageServiceCard = ({ title, text, image }) => {
   return (
-    <div className="card bg-base-100 border-secondary lg:w-9 shadow-sm sm:flex-1 m-5 transition ease-in-out delay-75 duration-100 hover:scale-105">
+    <div className="card bg-base-100 lg:w-9 shadow-sm sm:flex-1 m-5">
       <figure>
         <img
           className="h-75"
@@ -33,17 +34,21 @@ const ServiceCardContainer = props => {
   );
 };
 
-const HomePageServicesList = ({ services }) => {
+const HomePageServicesList = ({ lang }) => {
+
+  const language = getLanguage(lang)
+  const services = language.services
+
   return (
     <>
       <div className="services mt-10">
-        <h1 className="text-4xl/18 font-bold line text-center">Our Services</h1>
-        {services.map((group) => {
+        <h1 className="text-4xl/18 font-bold line text-center">{services.title}</h1>
+        {services.list.map((group, index) => {
           return (
-            <ServiceCardContainer>
-            {group.map((service) => {
+            <ServiceCardContainer key={index}>
+            {group.map((service, index) => {
               return (
-                <HomePageServiceCard title={service.title} text={service.desc} image={service.img} />
+                <HomePageServiceCard key={index} title={service.title} text={service.desc} image={service.img} />
               )
             })}
           </ServiceCardContainer>
