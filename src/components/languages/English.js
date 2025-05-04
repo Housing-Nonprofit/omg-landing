@@ -1,10 +1,10 @@
 import React from "react";
 import webdev from "./../../assets/webdev.png";
-import software from "./../../assets/software.png";
 import database from "./../../assets/database.png";
 import cloud from "./../../assets/cloud.png";
 import cyber from "./../../assets/cyber.png";
 import ai from "./../../assets/ai.png";
+import dashboard from "./../../assets/dashboard.webp";
 
 const TopMenu = [
     {
@@ -30,7 +30,7 @@ const Hero = {
 
 const Services = {
     title: "Our Services",
-    subtitle: "",
+    subtitle: "We provide a wide range of services designed to satisfy your needs.",
     list: [
         [
             {
@@ -39,13 +39,13 @@ const Services = {
                 img:webdev,
             },
             {
-                title:"Web Applications",
+                title:"Web Application Development",
                 desc:"We build dynamic, scalable web applications that streamline your business processes and deliver rich, interactive user experiences. From single-page apps to complex dashboards, our solutions integrate seamlessly with your existing systems and scale as your needs grow.",
-                img:software,
+                img:dashboard,
             },
             {
                 title:"Database Management",
-                desc:"We design robust, scalable database schemas on multiple database systems such as PosrgreSQL and MongoDB, and implement efficient management practices that optimize performance, ensure data integrity, and streamline maintenance.",
+                desc:"We design robust, scalable database schemas on multiple database systems such as PostgreSQL and MongoDB, and implement efficient management practices that optimize performance, ensure data integrity, and streamline maintenance.",
                 img:database,
             }
         ],
@@ -56,12 +56,12 @@ const Services = {
                 img:cloud,
             },
             {
-                title:"AI Integrations",
+                title:"AI Integration",
                 desc:"We connect your applications to AI services like GPT, chatbots, and other ready-made tools to improve user interactions and automate routine tasks. By using existing APIs, we set up secure, maintainable integrations that fit right into your current workflow.",
                 img:ai,
             },
             {
-                title:"CyberSecurity",
+                title:"Security Analysis",
                 desc:"We implement and provide advice on comprehensive cybersecurity strategies including regular vulnerability scanning, secure system configurations and strict access controls to safeguard your infrastructure and protect sensitive data.",
                 img:cyber,
             },
@@ -69,12 +69,36 @@ const Services = {
     ]
 }
 
+const Explainer = {
+  title: "Build the software you need",
+  subtitle: "From concept to maintenance, Webwave Solutions delivers end-to-end software excellence.",
+  design: {
+    badge: "Design",
+    title: "Tailored Design",
+    description:
+      "We analyze your requirements and familiarize with any existing infrastructure to design the solution that works best for your business. We always choose widely available and supported frameworks to make sure your product can stay up to date, and be compatible with new tools and technologies."
+  },
+  deploy: {
+    badge: "Deploy",
+    title: "Streamlined Deployment",
+    description:
+      "We choose the best deployment path for your software, focusing on reliability and affordability. We have experience deploying and managing applications big and small on multiple cloud infrastructure platforms such as Google Cloud and Digital Ocean."
+  },
+  maintain: {
+    badge: "Maintain",
+    title: "Real-Time Support",
+    description:
+      "For us, deploying your software is only the beginning. We offer real-time support to make sure your software runs smoothly, is always accessible and up to date. Our maintenance services are designed to guarantee the best user experience, and deal with any potential operational issues that may arise."
+  }
+};
+
 const EnglishBase = {
     code: "EN",
     opposite: "ES",
     menu: TopMenu,
     hero: Hero,
-    services: Services
+    services: Services,
+    explainer: Explainer
 }
 
 export default EnglishBase
