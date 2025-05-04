@@ -10,14 +10,14 @@ const Header = ({ onChangeLanguage, lang }) => {
 
   return (
     <>
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar shadow-sm h-[6dvh]">
         <div className="navbar-start portrait:w-full">
           <img
             className="size-10 portrait:m-auto"
             src={logo}
             alt=""
           />
-          <a className="btn btn-ghost text-xl portrait:hidden" href="/">Webwave Solutions</a>
+          <a className="ml-5 font-semibold text-xl portrait:hidden" href="/">Webwave Solutions</a>
         </div>
         <div className="navbar-end portrait:hidden">
           <ul className="menu menu-vertical lg:menu-horizontal">
