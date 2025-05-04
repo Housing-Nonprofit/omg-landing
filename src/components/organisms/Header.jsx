@@ -11,15 +11,15 @@ const Header = ({ onChangeLanguage, lang }) => {
   return (
     <>
       <div className="navbar bg-base-100 shadow-sm">
-        <div className="navbar-start">
+        <div className="navbar-start portrait:w-full">
           <img
-            className="size-10"
+            className="size-10 portrait:m-auto"
             src={logo}
             alt=""
           />
-          <a className="btn btn-ghost text-xl" href="/">Webwave Solutions</a>
+          <a className="btn btn-ghost text-xl portrait:hidden" href="/">Webwave Solutions</a>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end portrait:hidden">
           <ul className="menu menu-vertical lg:menu-horizontal">
             {menu.map((item) => {
               return (

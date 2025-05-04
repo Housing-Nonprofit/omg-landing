@@ -41,9 +41,9 @@ const HomePageServicesList = ({ lang }) => {
 
   return (
     <>
-      <div className="services mt-10">
-        <h1 className="text-4xl/18 font-bold line text-center">{services.title}</h1>
-        <p className="text-base text-gray-600 ml-auto text-center">{services.subtitle}</p>
+      <div className="services pt-15">
+        <h1 className="text-4xl/18 portrait:text-3xl/16 font-bold line text-center">{services.title}</h1>
+        <p className="text-base text-gray-600 m-auto portrait:ml-5 portrait:mr-5 text-center">{services.subtitle}</p>
         {services.list.map((group, index) => {
           return (
             <ServiceCardContainer key={index}>
