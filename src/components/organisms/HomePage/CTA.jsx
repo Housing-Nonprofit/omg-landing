@@ -3,9 +3,6 @@ import React from "react";
 export const CTA = () => {
   return (
     <div id="call-to-action" className="pt-30 pb-15 m-auto text-center">
-        <div className="badge badge-secondary mb-2 px-5 py-3">
-          Start Now
-        </div>
       <h2 className="text-6xl/18 pb-5 font-bold portrait:text-5xl/14 portrait:px-5">
         Start your project today
       </h2>
