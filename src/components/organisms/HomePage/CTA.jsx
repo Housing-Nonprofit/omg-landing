@@ -2,10 +2,10 @@ import React from "react";
 
 export const CTA = () => {
 
-  const textClass = "text-sm text-gray-600 m-auto mt-5 max-w-[80%] md:text-base md:max-w-xl lg:max-w-2xl lg:text-lg"
+  const textClass = "text-base text-gray-600 m-auto mt-5 max-w-[80%] md:max-w-xl lg:max-w-2xl"
   return (
     <div id="call-to-action" className="pt-30 pb-15 m-auto text-center">
-      <h2 className="text-2xl md:text-5xl/18 lg:text-6xl/18 pb-0 md:pb-0 font-bold">
+      <h2 className="text-4xl/18 portrait:text-3xl/16 font-bold line text-center">
         Start your project today
       </h2>
       <p className={textClass}>
