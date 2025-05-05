@@ -4,12 +4,12 @@ import getLanguage from "../../functions/Languajes";
 const HowToStep = ({ element }) => {
   let baseClass = "flex flex-col md:flex-row gap-8 items-center";
   let imageClass = "w-full flex md:w-[55%] lg:w-[50%]";
-  let textClass ="self-start w-full md:max-w-[50%] md:pt-5 lg:pt-10 lg:pl-10";
-  let descClass = "md:text-sm sm:text-sm";
+  let textClass ="self-start w-full md:max-w-[50%] md:pt-5 lg:pt-10 lg:pl-10 xl:pt-15";
+  let descClass = "md:text-sm sm:text-sm xl:text-lg";
   if (element.direction == 1) {
     baseClass = baseClass + " md:flex-row-reverse";
     imageClass = imageClass + " justify-start";
-    textClass = textClass + " md:pl-[5%] lg:pl-[5%] xl:pl-[15%]";
+    textClass = textClass + " md:pl-[5%] lg:pl-[5%] xl:pl-[12%]";
     descClass = descClass + " max-w-[90%]";
   } else {
     imageClass = imageClass + " justify-end";
@@ -28,7 +28,7 @@ const HowToStep = ({ element }) => {
         <div className="badge badge-secondary mb-2 px-5 py-3">
           {element.badge}
         </div>
-        <h3 className="text-xl font-semibold mb-2">{element.title}</h3>
+        <h3 className="text-xl xl:text-2xl font-semibold mb-2">{element.title}</h3>
         <p className={descClass}>{element.description}</p>
       </div>
     </div>
@@ -43,10 +43,10 @@ export default function HowItWorks({ lang }) {
     <section id="how-it-works" className="pt-15 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl/18 font-bold portrait:text-3xl/16">
+          <h2 className="text-4xl/18 lg:text-5xl/24 xl:text-6xl/28 font-bold">
             {content.title}
           </h2>
-          <p className="text-base text-gray-600">{content.subtitle}</p>
+          <p className="text-base text-gray-600 lg:text-lg xl:text-2xl">{content.subtitle}</p>
         </div>
 
         <div className="flex flex-col gap-16">

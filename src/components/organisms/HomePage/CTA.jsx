@@ -1,16 +1,18 @@
 import React from "react";
 
 export const CTA = () => {
+
+  const textClass = "text-sm text-gray-600 m-auto mt-5 max-w-[80%] md:text-base md:max-w-xl lg:max-w-2xl lg:text-lg"
   return (
     <div id="call-to-action" className="pt-30 pb-15 m-auto text-center">
-      <h2 className="text-2xl md:text-6xl/18 pb-0 md:pb-5 font-bold">
+      <h2 className="text-2xl md:text-5xl/18 lg:text-6xl/18 pb-0 md:pb-0 font-bold">
         Start your project today
       </h2>
-      <p className="text-sm text-gray-600 max-w-[80%] md:max-w-[40%] m-auto mt-5">
+      <p className={textClass}>
         Let us help you build the project your business needs to achieve its growth potential and 
         get ahead of the competition.
       </p>
-      <p className="text-sm text-gray-600 max-w-[80%] md:max-w-[40%] m-auto mt-5">
+      <p className={textClass}>
         We deliver tailor-made solutions that drive measurable results. Our team relies on industry best practices to ensure timely, on-budget delivery.
       </p>
       <button
