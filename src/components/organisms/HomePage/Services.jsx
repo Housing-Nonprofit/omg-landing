@@ -1,13 +1,12 @@
 import React from "react";
-import Button from "../../atoms/Button";
 import getLanguage from "../../functions/Languajes";
 
 const HomePageServiceCard = ({ title, text, image }) => {
   return (
-    <div className="card bg-base-100 lg:w-9 shadow-sm sm:flex-1 m-5">
-      <figure>
+    <div className="card-side flex bg-base-100 shadow-sm m-5 md:m-2 md:card md:w-1/3">
+      <figure className="w-1/4 m-auto md:w-7/12 lg:w-2/3 lg:m-auto lg:h-65">
         <img
-          className="h-75"
+          className=""
           src={
             image
               ? image
@@ -17,8 +16,8 @@ const HomePageServiceCard = ({ title, text, image }) => {
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title text-xl">{title ? title : "Card Title"}</h2>
-        <p className="text-base">
+        <h2 className="card-title text-lg md:text-base lg:text-lg">{title ? title : "Card Title"}</h2>
+        <p className="text-base md:text-sm lg:text-base">
           {text
             ? text
             : "Text goes here"}
@@ -30,7 +29,7 @@ const HomePageServiceCard = ({ title, text, image }) => {
 
 const ServiceCardContainer = props => {
   return (
-    <div className="flex lg:flex-row flex-col md:flex-col lg:max-w-7xl m-auto justify-around">{props.children}</div>
+    <div className="flex flex-col md:flex-row md:max-w-7xl m-auto justify-around">{props.children}</div>
   );
 };
 
@@ -41,9 +40,9 @@ const HomePageServicesList = ({ lang }) => {
 
   return (
     <>
-      <div className="services pt-15">
+      <div className="services pt-15" id="services">
         <h1 className="text-4xl/18 portrait:text-3xl/16 font-bold line text-center">{services.title}</h1>
-        <p className="text-base text-gray-600 m-auto portrait:ml-5 portrait:mr-5 text-center">{services.subtitle}</p>
+        <p className="text-base text-gray-600 m-auto portrait:ml-5 portrait:mr-5 text-center pb-5">{services.subtitle}</p>
         {services.list.map((group, index) => {
           return (
             <ServiceCardContainer key={index}>

@@ -2,6 +2,7 @@ import React from "react";
 import { LangSwitch } from "../atoms/ModeSwitch";
 import logo from "./../../assets/webwave_logo_black.png";
 import getLanguage from "../functions/Languajes";
+import { goToElement } from "../functions/Navigation";
 
 
 const Header = ({ onChangeLanguage, lang }) => {
@@ -24,7 +25,7 @@ const Header = ({ onChangeLanguage, lang }) => {
             {menu.map((item) => {
               return (
                 <li key={item.title}>
-                  <a href={item.url}>{item.title}</a>
+                  <button onClick={() => goToElement(item.url)}>{item.title}</button>
                 </li>
               );
             })}

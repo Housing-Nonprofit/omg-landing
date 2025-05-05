@@ -15,11 +15,11 @@ const TopMenu = [
     },
     {
         title: "Servicios",
-        url: "/services"
+        url: "services"
     },
     {
         title: "Contáctanos",
-        url: "/services"
+        url: "contact"
     }
 ]
 
@@ -79,7 +79,7 @@ const Explainer = {
             badge: "Design",
             title: "Tailored Design",
             description:
-                "We analyze your requirements and familiarize with any existing infrastructure to design the solution that works best for your business. We always choose widely available and supported frameworks to make sure your product can stay up to date, and be compatible with new tools and technologies.",
+                "Texto acá",
             image: software,
             direction: 0
         },
@@ -87,7 +87,7 @@ const Explainer = {
             badge: "Deploy",
             title: "Streamlined Deployment",
             description:
-                "We choose the best deployment path for your software, focusing on reliability and affordability. We have experience deploying and managing applications big and small on multiple cloud infrastructure platforms such as Google Cloud and Digital Ocean.",
+                "Texto acá",
             image: deployment,
             direction: 1
         },
@@ -95,7 +95,7 @@ const Explainer = {
             badge: "Maintain",
             title: "Real-Time Support",
             description:
-                "For us, deploying your software is only the beginning. We offer real-time support to make sure your software runs smoothly, is always accessible and up to date. Our maintenance services are designed to guarantee the best user experience, and deal with any potential operational issues that may arise.",
+                "Texto acá",
             image: maintenance,
             direction: 0
         }

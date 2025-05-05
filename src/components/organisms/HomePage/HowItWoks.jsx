@@ -2,27 +2,26 @@ import React from "react";
 import getLanguage from "../../functions/Languajes";
 
 const HowToStep = ({ element }) => {
-  let baseClass = "flex gap-8 items-center portrait:flex portrait:flex-col";
-  let imageClass = "w-[50%] flex portrait:w-full";
-  let textClass =
-    "self-start max-w-[50%] pt-10 pl-10 portrait:pt-0 portrait:pl-0 portrait:max-w-full";
-  let descClass = "portrait:w-full portrait:max-w-full";
+  let baseClass = "flex flex-col md:flex-row gap-8 items-center";
+  let imageClass = "w-full flex md:w-[55%] lg:w-[50%]";
+  let textClass ="self-start w-full md:max-w-[50%] md:pt-5 lg:pt-10 lg:pl-10";
+  let descClass = "md:text-sm sm:text-sm";
   if (element.direction == 1) {
-    baseClass = baseClass + " flex-row-reverse";
+    baseClass = baseClass + " md:flex-row-reverse";
     imageClass = imageClass + " justify-start";
-    textClass = textClass + " pl-[15%]";
-    descClass = descClass + " max-w-[85%]";
+    textClass = textClass + " md:pl-[5%] lg:pl-[5%] xl:pl-[15%]";
+    descClass = descClass + " max-w-[90%]";
   } else {
     imageClass = imageClass + " justify-end";
-    descClass = descClass + " max-w-[70%]";
+    descClass = descClass + " lg:max-w-[70%] md:max-w-[90%] lg:max-w-[70%]";
   }
   return (
-    <div id="design-block" className={baseClass}>
+    <div id={element.name} className={baseClass}>
       <div className={imageClass}>
         <img
           src={element.image}
           alt="Design"
-          className="w-4/5 portrait:w-full aspect-[3/2] rounded-2xl bg-blue-50 object-cover justify-center"
+          className="w-full lg:w-full xl:w-10/12 aspect-[3/2] rounded-2xl bg-blue-50 object-cover justify-center"
         />
       </div>
       <div className={textClass}>
