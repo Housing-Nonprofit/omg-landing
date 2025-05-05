@@ -1,8 +1,40 @@
 import React from "react";
-import software from "../../../assets/software.png";
-import deployment from "../../../assets/deployment.png";
-import maintenance from "../../../assets/maintenance.webp";
 import getLanguage from "../../functions/Languajes";
+
+const HowToStep = ({ element }) => {
+  let baseClass = "flex gap-8 items-center portrait:flex portrait:flex-col";
+  let imageClass = "w-[50%] flex portrait:w-full";
+  let textClass =
+    "self-start max-w-[50%] pt-10 pl-10 portrait:pt-0 portrait:pl-0 portrait:max-w-full";
+  let descClass = "portrait:w-full portrait:max-w-full";
+  if (element.direction == 1) {
+    baseClass = baseClass + " flex-row-reverse";
+    imageClass = imageClass + " justify-start";
+    textClass = textClass + " pl-[15%]";
+    descClass = descClass + " max-w-[85%]";
+  } else {
+    imageClass = imageClass + " justify-end";
+    descClass = descClass + " max-w-[70%]";
+  }
+  return (
+    <div id="design-block" className={baseClass}>
+      <div className={imageClass}>
+        <img
+          src={element.image}
+          alt="Design"
+          className="w-4/5 portrait:w-full aspect-[3/2] rounded-2xl bg-blue-50 object-cover justify-center"
+        />
+      </div>
+      <div className={textClass}>
+        <div className="badge badge-secondary mb-2 px-5 py-3">
+          {element.badge}
+        </div>
+        <h3 className="text-xl font-semibold mb-2">{element.title}</h3>
+        <p className={descClass}>{element.description}</p>
+      </div>
+    </div>
+  );
+};
 
 export default function HowItWorks({ lang }) {
   const language = getLanguage(lang);
@@ -12,79 +44,16 @@ export default function HowItWorks({ lang }) {
     <section id="how-it-works" className="pt-15 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl/18 font-bold portrait:text-3xl/16">{content.title}</h2>
+          <h2 className="text-4xl/18 font-bold portrait:text-3xl/16">
+            {content.title}
+          </h2>
           <p className="text-base text-gray-600">{content.subtitle}</p>
         </div>
 
         <div className="flex flex-col gap-16">
-          {/* Design */}
-          <div
-            id="design-block"
-            className="grid md:grid-cols-2 gap-8 items-center portrait:flex portrait:flex-col"
-          >
-            <div className="w-full flex justify-end">
-              <img
-                src={software}
-                alt="Design"
-                className="w-4/5 portrait:w-full aspect-[3/2] rounded-2xl bg-blue-50 object-cover justify-end"
-              />
-            </div>
-            <div className="self-start max-w-[60%] pt-10 pl-10 portrait:pt-0 portrait:pl-0 portrait:max-w-full">
-              <div className="badge badge-secondary mb-2 px-5 py-3">
-                {content.design.badge}
-              </div>
-              <h3 className="text-xl font-semibold mb-2">
-                {content.design.title}
-              </h3>
-              <p>{content.design.description}</p>
-            </div>
-          </div>
-
-          {/* Deploy */}
-          <div
-            id="deploy-block"
-            className="grid md:grid-cols-2 gap-8 items-center portrait:flex portrait:flex-col-reverse"
-          >
-            <div className="self-start max-w-[60%] ml-auto pt-10 pr-5 portrait:pt-0 portrait:pl-0 portrait:max-w-full">
-              <div className="badge badge-secondary mb-2 px-5 py-3">
-                {content.deploy.badge}
-              </div>
-              <h3 className="text-xl font-semibold mb-2">
-                {content.deploy.title}
-              </h3>
-              <p>{content.deploy.description}</p>
-            </div>
-            <div className="w-full flex justify-start">
-              <img
-                src={deployment}
-                alt="Deploy"
-                className="w-4/5 portrait:w-full aspect-[3/2] rounded-2xl bg-blue-50 object-cover justify-start"
-              />
-            </div>
-          </div>
-
-          {/* Maintain */}
-          <div
-            id="maintain-block"
-            className="grid md:grid-cols-2 gap-8 items-center portrait:flex portrait:flex-col"
-          >
-            <div className="w-full flex justify-end">
-              <img
-                src={maintenance}
-                alt="Maintain"
-                className="w-4/5 portrait:w-full aspect-[3/2] rounded-2xl bg-blue-50 object-cover justify-end"
-              />
-            </div>
-            <div className="self-start max-w-[60%] pt-10 pl-10 portrait:pt-0 portrait:pl-0 portrait:max-w-full">
-              <div className="badge badge-secondary mb-2 px-5 py-3">
-                {content.maintain.badge}
-              </div>
-              <h3 className="text-xl font-semibold mb-2">
-                {content.maintain.title}
-              </h3>
-              <p>{content.maintain.description}</p>
-            </div>
-          </div>
+          {content.elements.map((element) => {
+            return <HowToStep element={element} />;
+          })}
         </div>
       </div>
     </section>

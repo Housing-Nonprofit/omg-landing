@@ -1,6 +1,7 @@
 import React from "react";
 import getLanguage from "../../functions/Languajes";
 import herobg from "../../../assets/herobg.png";
+import { goToElement } from "../../functions/Navigation";
 
 
 const Hero = ({ lang }) => {
@@ -23,7 +24,7 @@ const Hero = ({ lang }) => {
           <p className="py-8 max-w-3xl mx-auto text-lg leading-relaxed">
             {content.subtitle}
           </p>
-          <button className="btn btn-primary btn-xl transition delay-100 ease-in-out duration-100 hover:scale-110 hover:btn-accent">
+          <button className="btn btn-primary btn-xl bg-gradient-to-br from-primary to-accent  text-white transition-transform delay-100 ease-in-out duration-100 hover:scale-110 hover:btn-accent" onClick={() => goToElement(content.link)}>
             {content.cta}
           </button>
         </div>

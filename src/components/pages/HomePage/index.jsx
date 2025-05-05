@@ -7,6 +7,7 @@ import EnglishBase from "../../languages/English"
 import SpanishBase from "../../languages/Spanish"
 import HowItWorks from "../../organisms/HomePage/HowItWoks";
 import "./HomePage.scss"
+import { CTA } from "../../organisms/HomePage/CTA";
 
 function HomePage ({ updateLanguage, lang }) {
 
@@ -15,6 +16,7 @@ function HomePage ({ updateLanguage, lang }) {
     <Header onChangeLanguage={updateLanguage} lang={lang} />
     <Hero lang={lang} />
     < HowItWorks />
+    < CTA />
     <HomePageServicesList lang={lang} />
     <Footer />
     </>
