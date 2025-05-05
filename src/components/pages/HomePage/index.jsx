@@ -8,6 +8,7 @@ import SpanishBase from "../../languages/Spanish";
 import HowItWorks from "../../organisms/HomePage/HowItWoks";
 import "./HomePage.scss";
 import { CTA } from "../../organisms/HomePage/CTA";
+import ContactSection from "../../organisms/HomePage/ContactForm";
 
 function HomePage({ updateLanguage, lang }) {
   return (
@@ -17,6 +18,7 @@ function HomePage({ updateLanguage, lang }) {
       <HowItWorks lang={lang} />
       <CTA />
       <HomePageServicesList lang={lang} />
+      < ContactSection />
       <Footer />
     </>
   );
