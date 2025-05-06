@@ -30,7 +30,7 @@ const Header = ({ onChangeLanguage, lang }) => {
               );
             })}
           </ul>
-          < LangSwitch onChangeLanguage={onChangeLanguage} language={language.opposite} />
+          {/* < LangSwitch onChangeLanguage={onChangeLanguage} language={language.opposite} /> */}
         </div>
       </div>
     </>
