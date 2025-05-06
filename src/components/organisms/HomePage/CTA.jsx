@@ -1,4 +1,5 @@
 import React from "react";
+import { goToElement } from "../../functions/Navigation";
 
 export const CTA = () => {
 
@@ -17,7 +18,7 @@ export const CTA = () => {
       </p>
       <button
         className="btn btn-primary bg-gradient-to-br from-primary to-accent  text-white transition-transform btn-xl delay-100 ease-in-out duration-100 hover:scale-110 hover:btn-accent mt-10 text-base sm:text-lg"
-        onClick={() => goToElement(content.link)}
+        onClick={() => goToElement('contact')}
       >
         Get In Touch
       </button>

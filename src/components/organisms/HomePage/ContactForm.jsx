@@ -4,7 +4,7 @@ import { InlineWidget } from 'react-calendly';
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-16 bg-base-100">
+    <section id="contact" className="bg-base-100">
       <div className="container mx-auto px-4 w-full md:max-w-7xl">
         <h2 className="text-4xl/18 portrait:text-3xl/16 font-bold line text-center">
           Get in Touch

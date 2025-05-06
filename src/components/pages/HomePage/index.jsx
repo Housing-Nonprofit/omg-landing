@@ -3,12 +3,11 @@ import Header from "../../organisms/Header";
 import Footer from "../../organisms/Footer";
 import Hero from "../../organisms/HomePage/Hero";
 import HomePageServicesList from "../../organisms/HomePage/Services";
-import EnglishBase from "../../languages/English";
-import SpanishBase from "../../languages/Spanish";
 import HowItWorks from "../../organisms/HomePage/HowItWoks";
 import "./HomePage.scss";
 import { CTA } from "../../organisms/HomePage/CTA";
 import ContactSection from "../../organisms/HomePage/ContactForm";
+import TechnologiesSection from "../../organisms/HomePage/Technologies";
 
 function HomePage({ updateLanguage, lang }) {
   return (
@@ -18,6 +17,7 @@ function HomePage({ updateLanguage, lang }) {
       <HowItWorks lang={lang} />
       <CTA />
       <HomePageServicesList lang={lang} />
+      < TechnologiesSection />
       < ContactSection />
       <Footer />
     </>
