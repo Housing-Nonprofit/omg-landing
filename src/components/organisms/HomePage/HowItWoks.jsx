@@ -43,7 +43,7 @@ export default function HowItWorks({ lang }) {
     <section id="how-it-works" className="pt-15 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl/18 portrait:text-3xl/16 font-bold line text-center">
+          <h2 className="text-2xl/16 md:text-4xl/18 font-bold line text-center">
             {content.title}
           </h2>
           <p className="text-base text-gray-600 m-auto portrait:ml-5 portrait:mr-5 text-center pb-5 mb-10">{content.subtitle}</p>

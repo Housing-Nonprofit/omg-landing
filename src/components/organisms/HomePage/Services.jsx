@@ -4,7 +4,7 @@ import getLanguage from "../../functions/Languajes";
 const HomePageServiceCard = ({ title, text, image }) => {
   return (
     <div className="card-side flex bg-base-100 shadow-sm m-5 md:m-2 md:card md:w-1/3">
-      <figure className="w-1/4 m-auto md:w-7/12 lg:w-2/3 lg:m-auto lg:h-65">
+      <figure className="w-full ml-5 m-auto md:ml-0 md:w-7/12 lg:w-2/3 lg:m-auto lg:h-65">
         <img
           className=""
           src={
