@@ -29,7 +29,7 @@ function GroupCard({ title, items }) {
             <img
               src={item.logoSrc}
               alt={`${item.name} logo`}
-              className="w-12 h-12 object-contain mb-2"
+              className="w-10 h-10 md:w-12 md:h-12 object-contain mb-2"
             />
             <span className="text-sm font-medium">{item.name}</span>
           </div>
