@@ -17,8 +17,8 @@ function HomePage({ updateLanguage, lang }) {
       <HowItWorks lang={lang} />
       <CTA />
       <HomePageServicesList lang={lang} />
-      < TechnologiesSection />
-      < ContactSection />
+      <TechnologiesSection />
+      <ContactSection />
       <Footer />
     </>
   );

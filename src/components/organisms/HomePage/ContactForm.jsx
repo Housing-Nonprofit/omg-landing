@@ -17,20 +17,16 @@ export default function ContactSection() {
           <div className="space-y-6 pt-10">
           <div>
               <h4 className='font-bold text-xl mb-5'>About Us</h4>
-              <p>Webwave Solutions is a Colombian software development firm created in 2024 by software engineers Harold Hidalgo and Luis Marquez. Our purpose is to create meaningful relations with customers worldwide by providing adequate software-based solutions to operational challenges.</p>
+              <p>Owmers Media Group is a smedia solutions firm created in 2021 by business management expert Janco Damas along with software engineers Harold Hidalgo and Luis Marquez. Our purpose is to create meaningful relations with customers worldwide by providing adequate software-based solutions to operational challenges.</p>
               <p className='mt-5'>If you are looking for a reliable partner to address your business information technology needs, feel free to schedule a meeting with our team or reach out through email or WhatsApp and we will gladly assist you.</p>
             </div>
             <div className="flex items-center">
               <FaEnvelope className="text-primary mr-3 text-xl" />
-              <span>contact@webwave.solutions</span>
-            </div>
-            <div className="flex items-center">
-              <FaPhoneAlt className="text-primary mr-3 text-xl" />
-              <span>+57 304 3181981</span>
+              <span>info@ownersmediagroup.com</span>
             </div>
             <div className="flex items-center">
               <FaMapMarkerAlt className="text-primary mr-3 text-xl" />
-              <span>Medellín, Colombia</span>
+              <span>Miami, FL</span>
             </div>
           </div>
           {/* Calendly Scheduler */}

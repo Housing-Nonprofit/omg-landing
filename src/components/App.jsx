@@ -22,8 +22,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={< HomePage updateLanguage={updateLanguage} lang={currentLang} />} />
-          <Route path="/services" element={< ServicesPage updateLanguage={updateLanguage} lang={currentLang} />} />
-          <Route path="/contact" element={< ContactPage updateLanguage={updateLanguage} lang={currentLang} />} />
         </Routes>
       </BrowserRouter>
     </>
