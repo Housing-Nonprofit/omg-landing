@@ -13,7 +13,7 @@ const Footer = () => {
             alt=""
           />
       <p className="font-bold">
-        Webwave Solutions
+        Owners Media Group
       </p>
       <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
     </aside>
