@@ -10,7 +10,7 @@ const Hero = ({ lang }) => {
 
   return (
     <div
-      className="hero relative min-h-[94dvh] md:min-h-[700px] bg-cover bg-center w-full md:max-w-7xl m-auto"
+      className="hero relative min-h-[94dvh] md:min-h-[800px] bg-cover bg-center w-full"
       style={{ backgroundImage: `url(${herobg})` }}
     >
       {/* DaisyUI overlay with 60% white tint */}

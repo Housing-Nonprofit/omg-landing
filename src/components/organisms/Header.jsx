@@ -11,13 +11,15 @@ const Header = ({ onChangeLanguage, lang }) => {
 
   return (
     <>
-      <div className="navbar shadow-sm h-[6dvh] w-full md:max-w-7xl m-auto md:px-5">
+      <div className="navbar shadow-sm h-[6dvh] w-full md:px-5">
+        <div className="md:max-w-7xl m-auto navbar">
+
         <div className="navbar-start w-full">
           <img
             className="size-10 portrait:m-auto"
             src={logo}
             alt=""
-          />
+            />
           <a className="ml-5 font-semibold text-xl portrait:hidden" href="/">Owners Media Group</a>
         </div>
         <div className="navbar-end portrait:hidden">
@@ -31,6 +33,7 @@ const Header = ({ onChangeLanguage, lang }) => {
             })}
           </ul>
         </div>
+            </div>
       </div>
     </>
   );
