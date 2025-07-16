@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./../../assets/webwave_logo_white.png";
+import logo from "./../../assets/OM_logo.png";
 
 
 const Footer = () => {
